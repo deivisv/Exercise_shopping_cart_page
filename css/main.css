@@ -1,0 +1,10 @@
+.navbarr{
+    background-color: #132456 !important;
+}
+.navper{
+    margin-right: -15% !important;
+}
+.img-producto{
+    height: 250px !important;
+    object-fit: contain !important;
+}
