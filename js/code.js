@@ -351,7 +351,13 @@ class CarritoDeCompras {
 
 let userBuy = new CarritoDeCompras();
 let table = document.querySelector("#tableProducts")
+let counterCart = document.querySelector("#cartNumber")
 let contCart = 0;
+if (localStorage.getItem("counterCart") == null) {
+    localStorage.setItem('counterCart', contCart)
+} else {
+    contCart = localStorage.getItem("counterCart")
+}
 
 var productCounter = 1
 if (localStorage.getItem("counter") == null) {
@@ -400,10 +406,18 @@ function enlistProduct(currentCounter = 1, listProduct = false){
             </tr>
         `
         }
-    contCart = parseInt(currentCounter)
-    document.querySelector("#cartNumber").innerHTML = `
-    <span>${contCart}</span>
+    if(listProduct){
+        counterCart.innerHTML = `
+        <span>${localStorage.getItem('counterCart')}</span>
         `
+    }else{
+        contCart = parseInt(0)
+        localStorage.setItem('counterCart', contCart)
+        counterCart.innerHTML = `
+            <span>${localStorage.getItem('counterCart')}</span>
+        `
+    }
+    
     }
 
 enlistProduct(1, true)
@@ -418,16 +432,18 @@ function agregarProductoCarrito(productName, productPrice, productId){
     localStorage.setItem("counter", productCounter)
     let currentCounter = parseInt(productCounter) - 1
     enlistProduct(currentCounter)
-        
-    userBuy.nuevo_producto(productInfo)
+    
+    console.log(userBuy.nuevo_producto(productInfo))
     document.getElementById("tableTotal").innerHTML = `
     <tr>
         <td colspan="4">$ ${userBuy.precio_total(productInfo.precio)}</td>
     </tr>
     `
+    debugger
     contCart = parseInt(contCart) + parseInt(1)
-    document.querySelector("#cartNumber").innerHTML = `
-    <span>${contCart}</span>
+    localStorage.setItem('counterCart', contCart)
+    counterCart.innerHTML = `
+    <span>${localStorage.getItem('counterCart')}</span>
     `
 }
 
@@ -441,7 +457,7 @@ function deleteProduct(productUbi){
     enlistProduct(1, true)
     
     contCart = parseInt(contCart) - parseInt(1)
-    document.querySelector("#cartNumber").innerHTML = `
+    counterCart.innerHTML = `
     <span>${contCart}</span>
     `
 }
