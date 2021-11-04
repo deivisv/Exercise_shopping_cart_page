@@ -8,3 +8,7 @@
     height: 250px !important;
     object-fit: contain !important;
 }
+
+.trash{
+    cursor: pointer !important;
+}

@@ -213,7 +213,7 @@ for (const iterador of laptopsList) {
                 <p class="card-text">Specs: ${iterador.specs}</p>
                 <div class="d-flex justify-content-evenly align-items-center" >
                     <button type="button" class="btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#exampleModal${iterador.id}">More info!</button>
-                    <button type="button" class="btn btn-primary text-center" onclick="agregarProductoCarrito('${iterador.name}', ${iterador.price})">Add to cart!</button>
+                    <button type="button" class="btn btn-primary text-center" onclick="agregarProductoCarrito('${iterador.name}', ${iterador.price}, ${iterador.id})">Add to cart!</button>
                 </div>
             </div>
         </div>
@@ -276,7 +276,7 @@ for (const iteradorDos of smartphoneList) {
                 <p class="card-text">Specs: ${iteradorDos.specs}</p>
                 <div class="d-flex justify-content-evenly align-items-center" >
                     <button type="button" class="btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#exampleModal${iteradorDos.id}">More info!</button>
-                    <button type="button" class="btn btn-primary text-center" onclick="agregarProductoCarrito('${iteradorDos.name}', ${iteradorDos.price})">Add to cart!</button>
+                    <button type="button" class="btn btn-primary text-center" onclick="agregarProductoCarrito('${iteradorDos.name}', ${iteradorDos.price}, ${iteradorDos.id})">Add to cart!</button>
                 </div>
             </div>
         </div>
@@ -339,10 +339,13 @@ class CarritoDeCompras {
 
     precio_total() {
         let cuenta_total = 0;
-        this.productos.forEach(function (producto, ) {
+        this.productos.forEach(function (producto) {
             cuenta_total = parseInt(cuenta_total) + parseInt(producto.precio)
         });
         return cuenta_total
+    }
+    eliminar_producto(){
+        this.productos.pop();
     }
 }
 
@@ -350,16 +353,21 @@ let userBuy = new CarritoDeCompras();
 let table = document.querySelector("#tableProducts")
 let contCart = 0;
 
-
-function agregarProductoCarrito(productName, productPrice){
-    let cant = 1;
-    let productInfo = { nombre: productName, precio: productPrice }
+function agregarProductoCarrito(productName, productPrice, productId){
+    let productInfo = { nombre: productName, precio: productPrice, identificador: productId }
+    let cant = parseInt(productInfo.precio) * 2;
     table.innerHTML += `
         <tr>
+            <td class="text-center">${productInfo.identificador}</td>
             <td>${productInfo.nombre}</td>
-            <td>${cant}</td>
+            <td><input type="number" id="productCantNumber"></td>
             <td>$ ${productInfo.precio}</td>
-            <td>$total</td>
+            <td>${cant}</td>
+            <td>
+                <button class="btn btn-danger" type="button" onclick="deleteProduct()">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </td>
         </tr>
     `
     console.log(userBuy.nuevo_producto(productInfo))
@@ -374,6 +382,13 @@ function agregarProductoCarrito(productName, productPrice){
     `
 }
 
-/* 
+function deleteProduct(){
+    userBuy.eliminar_producto()
+    contCart = parseInt(contCart) - parseInt(1)
+    document.querySelector("#cartNumber").innerHTML = `
+    <span>${contCart}</span>
+    `
+}
 
-*/
+/* var productCant = document.getElementById('productCantNumber').value;
+    console.log(productCant) */
