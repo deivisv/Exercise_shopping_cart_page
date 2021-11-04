@@ -182,7 +182,7 @@ let smartphoneList = [{
     duración y su gran procesador Qualcomm Snapdragon optimizado.`,
 }]
 
-let accessoriesList = [{
+/* let accessoriesList = [{
     id: 1,
     name: `d`,
     year: 2021,
@@ -191,7 +191,7 @@ let accessoriesList = [{
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-}]
+}] */
 
 function colocar_decimal(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
@@ -199,7 +199,7 @@ function colocar_decimal(num) {
 
 let sectionOne = document.querySelector("#pageSectionLaptops")
 let sectionTwo = document.querySelector("#pSectionSmartphones")
-//let sectionTwo = document.querySelector("#pSectionAcc")
+//let sectionThree = document.querySelector("#pSectionAcc")
 
 for (const iterador of laptopsList) {
     sectionOne.innerHTML += `
@@ -353,10 +353,13 @@ let userBuy = new CarritoDeCompras();
 let table = document.querySelector("#tableProducts")
 let counterCart = document.querySelector("#cartNumber")
 let contCart = 0;
-if (localStorage.getItem("counterCart") == null) {
+if (localStorage.getItem('counterCart') == null) {
     localStorage.setItem('counterCart', contCart)
 } else {
-    contCart = localStorage.getItem("counterCart")
+    contCart = localStorage.getItem('counterCart')
+    counterCart.innerHTML = `
+        <span>${contCart}</span>
+    `
 }
 
 var productCounter = 1
@@ -405,20 +408,8 @@ function enlistProduct(currentCounter = 1, listProduct = false){
                 </td>
             </tr>
         `
-        }
-    if(listProduct){
-        counterCart.innerHTML = `
-        <span>${localStorage.getItem('counterCart')}</span>
-        `
-    }else{
-        contCart = parseInt(0)
-        localStorage.setItem('counterCart', contCart)
-        counterCart.innerHTML = `
-            <span>${localStorage.getItem('counterCart')}</span>
-        `
-    }
-    
-    }
+    }    
+}
 
 enlistProduct(1, true)
 
@@ -430,8 +421,6 @@ function agregarProductoCarrito(productName, productPrice, productId){
     localStorage.setItem("Price_"+productCounter, parseInt(productInfo.precio))
     productCounter = parseInt(productCounter) + 1
     localStorage.setItem("counter", productCounter)
-    let currentCounter = parseInt(productCounter) - 1
-    enlistProduct(currentCounter)
     
     console.log(userBuy.nuevo_producto(productInfo))
     document.getElementById("tableTotal").innerHTML = `
@@ -439,12 +428,15 @@ function agregarProductoCarrito(productName, productPrice, productId){
         <td colspan="4">$ ${userBuy.precio_total(productInfo.precio)}</td>
     </tr>
     `
-    debugger
-    contCart = parseInt(contCart) + parseInt(1)
+    //debugger
+    contCart = parseInt(contCart) + 1
+    console.log(contCart)
     localStorage.setItem('counterCart', contCart)
     counterCart.innerHTML = `
     <span>${localStorage.getItem('counterCart')}</span>
     `
+    let currentCounter = parseInt(productCounter) - 1
+    enlistProduct(currentCounter)
 }
 
 function deleteProduct(productUbi){
@@ -457,8 +449,9 @@ function deleteProduct(productUbi){
     enlistProduct(1, true)
     
     contCart = parseInt(contCart) - parseInt(1)
+    localStorage.setItem('counterCart', contCart)
     counterCart.innerHTML = `
-    <span>${contCart}</span>
+    <span>${localStorage.getItem('counterCart')}</span>
     `
 }
 
