@@ -353,24 +353,73 @@ let userBuy = new CarritoDeCompras();
 let table = document.querySelector("#tableProducts")
 let contCart = 0;
 
+var productCounter = 1
+if (localStorage.getItem("counter") == null) {
+    localStorage.setItem('counter', productCounter)
+} else {
+    productCounter = localStorage.getItem("counter")
+}
+
+function enlistProduct(currentCounter = 1, listProduct = false){
+        //debugger
+        if (listProduct) {
+            let futureCounter = localStorage.getItem('counter')
+            for (let x = 1; x < futureCounter ; x++) {
+                if(localStorage.getItem('Id_' + x) != null && localStorage.getItem('Name_' + x) != null && 
+                    localStorage.getItem('Price_' + x) != null){
+                    //debugger
+                    table.innerHTML += `
+                        <tr>
+                            <td class='text-center'>${localStorage.getItem('Id_' + x)}</td>
+                            <td>${localStorage.getItem('Name_' + x)}</td>
+                            <td><input type='number' id='productCantNumber'></td>
+                            <td>$ ${localStorage.getItem('Price_' + x)}</td>
+                            <td>100</td>
+                            <td>
+                                <button class="btn btn-danger" type="button" onclick="deleteProduct(${x})">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    `
+                }
+            }
+        } else {
+            table.innerHTML += `
+            <tr>
+                <td class='text-center'>${localStorage.getItem('Id_' + currentCounter)}</td>
+                <td>${localStorage.getItem('Name_' + currentCounter)}</td>
+                <td><input type='number' id='productCantNumber'></td>
+                <td>$ ${localStorage.getItem('Price_' + currentCounter)}</td>
+                <td>100</td>
+                <td>
+                    <button class="btn btn-danger" type="button" onclick="deleteProduct(${currentCounter})">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </td>
+            </tr>
+        `
+        }
+    contCart = parseInt(currentCounter)
+    document.querySelector("#cartNumber").innerHTML = `
+    <span>${contCart}</span>
+        `
+    }
+
+enlistProduct(1, true)
+
 function agregarProductoCarrito(productName, productPrice, productId){
     let productInfo = { nombre: productName, precio: productPrice, identificador: productId }
-    let cant = parseInt(productInfo.precio) * 2;
-    table.innerHTML += `
-        <tr>
-            <td class="text-center">${productInfo.identificador}</td>
-            <td>${productInfo.nombre}</td>
-            <td><input type="number" id="productCantNumber"></td>
-            <td>$ ${productInfo.precio}</td>
-            <td>${cant}</td>
-            <td>
-                <button class="btn btn-danger" type="button" onclick="deleteProduct()">
-                    <i class="far fa-trash-alt"></i>
-                </button>
-            </td>
-        </tr>
-    `
-    console.log(userBuy.nuevo_producto(productInfo))
+    //let cant = parseInt(productInfo.precio) * 2;
+    localStorage.setItem("Id_"+productCounter, parseInt(productInfo.identificador))
+    localStorage.setItem("Name_"+productCounter, productInfo.nombre)
+    localStorage.setItem("Price_"+productCounter, parseInt(productInfo.precio))
+    productCounter = parseInt(productCounter) + 1
+    localStorage.setItem("counter", productCounter)
+    let currentCounter = parseInt(productCounter) - 1
+    enlistProduct(currentCounter)
+        
+    userBuy.nuevo_producto(productInfo)
     document.getElementById("tableTotal").innerHTML = `
     <tr>
         <td colspan="4">$ ${userBuy.precio_total(productInfo.precio)}</td>
@@ -382,8 +431,15 @@ function agregarProductoCarrito(productName, productPrice, productId){
     `
 }
 
-function deleteProduct(){
-    userBuy.eliminar_producto()
+function deleteProduct(productUbi){
+    let table = document.querySelector("#tableProducts")
+    table.innerHTML = ''
+
+    localStorage.removeItem("Id_" + productUbi)
+    localStorage.removeItem("Name_" + productUbi)
+    localStorage.removeItem("Price_" + productUbi)
+    enlistProduct(1, true)
+    
     contCart = parseInt(contCart) - parseInt(1)
     document.querySelector("#cartNumber").innerHTML = `
     <span>${contCart}</span>
