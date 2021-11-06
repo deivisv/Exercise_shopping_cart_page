@@ -12,3 +12,11 @@
 .trash{
     cursor: pointer !important;
 }
+
+.input{
+    width: 13% !important;
+}
+
+.inputCant{
+    width: 40% !important;
+}

@@ -381,10 +381,13 @@ function enlistProduct(currentCounter = 1, listProduct = false){
                         <tr>
                             <td class='text-center'>${localStorage.getItem('Id_' + x)}</td>
                             <td>${localStorage.getItem('Name_' + x)}</td>
-                            <td><input type='number' id='productCantNumber'></td>
+                            <td id='productCantNumber${x}' class="input"></td>
                             <td>$ ${localStorage.getItem('Price_' + x)}</td>
-                            <td>100</td>
+                            <td>$ ${localStorage.getItem('totalPriceUni_'+x)}</td>
                             <td>
+                                <button class="btn btn-success fw-bold" type="button" onclick="editCantProduct(${x})">
+                                    Edit Cant
+                                </button>
                                 <button class="btn btn-danger" type="button" onclick="deleteProduct(${x})">
                                     <i class="far fa-trash-alt"></i>
                                 </button>
@@ -398,10 +401,13 @@ function enlistProduct(currentCounter = 1, listProduct = false){
             <tr>
                 <td class='text-center'>${localStorage.getItem('Id_' + currentCounter)}</td>
                 <td>${localStorage.getItem('Name_' + currentCounter)}</td>
-                <td><input type='number' id='productCantNumber'></td>
+                <td id='productCantNumber${currentCounter}' class="input"></td>
                 <td>$ ${localStorage.getItem('Price_' + currentCounter)}</td>
-                <td>100</td>
+                <td>$ ${localStorage.getItem('totalPriceUni_'+ currentCounter)}</td>
                 <td>
+                    <button class="btn btn-success fw-bold" type="button" onclick="editCantProduct(${currentCounter})">
+                        Edit Cant.
+                    </button>
                     <button class="btn btn-danger" type="button" onclick="deleteProduct(${currentCounter})">
                         <i class="far fa-trash-alt"></i>
                     </button>
@@ -415,10 +421,14 @@ enlistProduct(1, true)
 
 function agregarProductoCarrito(productName, productPrice, productId){
     let productInfo = { nombre: productName, precio: productPrice, identificador: productId }
-    //let cant = parseInt(productInfo.precio) * 2;
+    var contCantidad = 1
+    var totalPrice = parseInt(productInfo.precio)
     localStorage.setItem("Id_"+productCounter, parseInt(productInfo.identificador))
     localStorage.setItem("Name_"+productCounter, productInfo.nombre)
     localStorage.setItem("Price_"+productCounter, parseInt(productInfo.precio))
+    localStorage.setItem("Cantproduct_"+productCounter, contCantidad)
+    localStorage.setItem("totalPriceUni_"+productCounter, totalPrice)
+    
     productCounter = parseInt(productCounter) + 1
     localStorage.setItem("counter", productCounter)
     
@@ -439,6 +449,29 @@ function agregarProductoCarrito(productName, productPrice, productId){
     enlistProduct(currentCounter)
 }
 
+function editCantProduct(productUbi){
+    //console.log(productUbi)
+    var productCant = document.getElementById(`productCantNumber${productUbi}`);
+    var priceAfter = localStorage.getItem('Cantproduct_'+productUbi)
+    productCant.innerHTML = `
+        <input type='number' class="inputCant me-3" value="${priceAfter}">
+        <button class="btn btn-warning fw-bold" type="button" onclick="setCantProduct(${productUbi})">
+            Ok.
+        </button>
+    `
+}
+
+function setCantProduct(cantUbi){
+    var value = document.querySelector(".inputCant").value;
+    var priceProduct = localStorage.getItem('totalPriceUni_'+cantUbi)
+    var prueba = parseInt(value) * parseInt(priceProduct)
+    console.log(prueba)
+    localStorage.setItem('totalPriceUni_' + cantUbi, prueba)
+    let table = document.querySelector("#tableProducts")
+    table.innerHTML = ''
+    enlistProduct(1, true)
+}
+
 function deleteProduct(productUbi){
     let table = document.querySelector("#tableProducts")
     table.innerHTML = ''
@@ -454,6 +487,3 @@ function deleteProduct(productUbi){
     <span>${localStorage.getItem('counterCart')}</span>
     `
 }
-
-/* var productCant = document.getElementById('productCantNumber').value;
-    console.log(productCant) */
