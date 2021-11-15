@@ -5,84 +5,84 @@ let laptopsList = [{
     price: 1500,
     specs: "Intel Core i5, Ram 8GB, SSD 500GB, Intel HD grapichs",
     img: "./img/imagesLaptops/1/img_one.jpg",
-    imgC: {img1: "./img/imagesLaptops/1/img_one.jpg", img2: "./img/imagesLaptops/1/img_two.jpg", img3: "./img/imagesLaptops/1/img_three.jpg", img4: "./img/imagesLaptops/1/img_one.jpg"},
+    imgC: { img1: "./img/imagesLaptops/1/img_one.jpg", img2: "./img/imagesLaptops/1/img_two.jpg", img3: "./img/imagesLaptops/1/img_three.jpg", img4: "./img/imagesLaptops/1/img_one.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-},{
+}, {
     id: 2,
     name: `Laptop ASUS 14 Pulgadas X415JA-BV1097TS - Azul`,
     year: 2021,
     price: 2500,
     specs: "Procesador Intel Pentium Gold, Ram 4GB, SSD 125GB, Intel HD grapichs",
     img: "./img/imagesLaptops/2/img_1.jpg",
-    imgC: {img1: "./img/imagesLaptops/2/img_1.jpg", img2: "./img/imagesLaptops/2/img_2.jpg",img3: "./img/imagesLaptops/2/img_3.jpg",img4:"./img/imagesLaptops/2/img_1.jpg"},
+    imgC: { img1: "./img/imagesLaptops/2/img_1.jpg", img2: "./img/imagesLaptops/2/img_2.jpg", img3: "./img/imagesLaptops/2/img_3.jpg", img4: "./img/imagesLaptops/2/img_1.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-},{
+}, {
     id: 3,
     name: `Laptop LENOVO 14 Pulgadas S145 - Negro`,
     year: 2021,
     price: 3000,
     specs: `Intel Core i3, Ram 4GB, Disco Solido 128GB`,
     img: "./img/imagesLaptops/3/img_1.jpg",
-    imgC: {img1: "./img/imagesLaptops/3/img_1.jpg", img2: "./img/imagesLaptops/3/img_2.png",img3: "./img/imagesLaptops/3/img_3.png",img4:"./img/imagesLaptops/3/img_4.png"},
+    imgC: { img1: "./img/imagesLaptops/3/img_1.jpg", img2: "./img/imagesLaptops/3/img_2.png", img3: "./img/imagesLaptops/3/img_3.png", img4: "./img/imagesLaptops/3/img_4.png" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-},{
+}, {
     id: 4,
     name: `Laptop ACER 15.6 Pulgadas 31VS - Plateado`,
     year: 2020,
     price: 1600,
     specs: `Intel Core i3, 4GB RAM, Disco Solido 256GB`,
     img: "./img/imagesLaptops/4/img_1.jpg",
-    imgC: {img1: "./img/imagesLaptops/4/img_1.jpg", img2: "./img/imagesLaptops/4/img_2.jpg",img3: "./img/imagesLaptops/4/img_3.jpg",img4:"./img/imagesLaptops/4/img_4.jpg"},
+    imgC: { img1: "./img/imagesLaptops/4/img_1.jpg", img2: "./img/imagesLaptops/4/img_2.jpg", img3: "./img/imagesLaptops/4/img_3.jpg", img4: "./img/imagesLaptops/4/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-},{
+}, {
     id: 5,
     name: `MacBook Air de 13 Pulgadas MGN63LA/A - Gris espacial`,
     year: 2021,
     price: 4000,
     specs: `Chip M1 RAM 8GB Disco Estado Solido 256 GB `,
     img: "./img/imagesLaptops/5/img_1.jpg",
-    imgC: {img1: "./img/imagesLaptops/5/img_1.jpg", img2: "./img/imagesLaptops/5/img_2.jpg",img3: "./img/imagesLaptops/5/img_3.jpg",img4:"./img/imagesLaptops/5/img_4.jpg"},
+    imgC: { img1: "./img/imagesLaptops/5/img_1.jpg", img2: "./img/imagesLaptops/5/img_2.jpg", img3: "./img/imagesLaptops/5/img_3.jpg", img4: "./img/imagesLaptops/5/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-},{
+}, {
     id: 6,
     name: `laptop Huawei 15.6 pulgadas Matebook D15`,
     year: 2021,
     price: 1800,
     specs: `Intel Core i5, SSD 512GB, 16GB RAM`,
     img: "./img/imagesLaptops/6/img_1.jpg",
-    imgC: {img1: "./img/imagesLaptops/6/img_1.jpg", img2: "./img/imagesLaptops/6/img_2.jpg",img3: "./img/imagesLaptops/6/img_3.jpg",img4:"./img/imagesLaptops/6/img_4.jpg"},
+    imgC: { img1: "./img/imagesLaptops/6/img_1.jpg", img2: "./img/imagesLaptops/6/img_2.jpg", img3: "./img/imagesLaptops/6/img_3.jpg", img4: "./img/imagesLaptops/6/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-},{
+}, {
     id: 7,
     name: `Laptop MSI 15.6 Pulgadas Modern 15A5M - Gris`,
     year: 2021,
     price: 3000,
     specs: ` Ryzen 5, 8GB RAM, Disco Estado Sólido 256GB`,
     img: "./img/imagesLaptops/7/img_1.jpg",
-    imgC: {img1: "./img/imagesLaptops/7/img_1.jpg", img2: "./img/imagesLaptops/7/img_2.jpg", img3: "./img/imagesLaptops/7/img_3.jpg", img4:"./img/imagesLaptops/7/img_4.jpg"},
+    imgC: { img1: "./img/imagesLaptops/7/img_1.jpg", img2: "./img/imagesLaptops/7/img_2.jpg", img3: "./img/imagesLaptops/7/img_3.jpg", img4: "./img/imagesLaptops/7/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
-},{
+}, {
     id: 8,
     name: `Laptop LENOVO 10,1 Pulgadas D330 - Gris`,
     year: 2019,
     price: 1500,
     specs: `Intel Celeron, 4GB Ram, Disco Solido 64GB, Computador Convertible 2en1`,
     img: "./img/imagesLaptops/8/img_1.jpg",
-    imgC: {img1: "./img/imagesLaptops/8/img_1.jpg", img2: "./img/imagesLaptops/8/img_2.jpg", img3: "./img/imagesLaptops/8/img_3.jpg", img4:"./img/imagesLaptops/8/img_4.jpg"},
+    imgC: { img1: "./img/imagesLaptops/8/img_1.jpg", img2: "./img/imagesLaptops/8/img_2.jpg", img3: "./img/imagesLaptops/8/img_3.jpg", img4: "./img/imagesLaptops/8/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
     vitae repudiandae. Commodi optio laudantium voluptatibus porro consequatur aspernatur molestias libero 
     eius voluptas magni. Aliquid ab maiores sunt?`,
@@ -95,87 +95,87 @@ let smartphoneList = [{
     price: 600,
     specs: `Sistema de 4 cámaras con 48 MP1, Pantalla fluida de 90 Hz con 6.5, Hasta 2 días de batería2.`,
     img: "./img/imagesSmartphones/1/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/1/img_1.jpg", img2: "./img/imagesSmartphones/1/img_2.jpg", img3: "./img/imagesSmartphones/1/img_3.jpg", img4: "./img/imagesSmartphones/1/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/1/img_1.jpg", img2: "./img/imagesSmartphones/1/img_2.jpg", img3: "./img/imagesSmartphones/1/img_3.jpg", img4: "./img/imagesSmartphones/1/img_4.jpg" },
     information: `El nuevo moto g20 cuenta con un avanzado sistema de 4 cámaras. Anhelas un sensor de 48 MP1 y 
     cámaras que se adapten a cada situación. Es tuyo. Qué tal una pantalla ultra amplia más fluida. Con el 
     moto g20, es posible.`,
-},{
+}, {
     id: 10,
     name: `Celular XIAOMI REDMI 10 128GB Gris`,
     year: 2021,
     price: 500,
     specs: `Cámara cuádruple de 50Mp, alta calidad al mejor precio, Pantalla de 90Hz, disfruta mejores experiencias en juegos, Procesador MediaTek G88, poderoso en todo momento`,
     img: "./img/imagesSmartphones/2/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/2/img_1.jpg", img2: "./img/imagesSmartphones/2/img_2.jpg", img3: "./img/imagesSmartphones/2/img_3.jpg", img4: "./img/imagesSmartphones/2/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/2/img_1.jpg", img2: "./img/imagesSmartphones/2/img_2.jpg", img3: "./img/imagesSmartphones/2/img_3.jpg", img4: "./img/imagesSmartphones/2/img_4.jpg" },
     information: `Con el nuevo Redmi 10 tendrás la total seguridad que todos tus momentos serán especiales 
     gracias a su alta resolución de 50MP en su cámara principal que harán que todos tus recuerdos tengan 
     colores vivos y reales, complementados con 3 cámaras para que no te piedras de ningún detalle, Si lo que 
     te gusta es ver películas, series o videos, tendrás la gran ventaja de contar con una gran pantalla de 6.5 
     pulgadas que se complementan con una tasa de refresco de 90Hz haciéndolo uno de los smartphones más económicos 
     con esta característica.`,
-},{
+}, {
     id: 11,
     name: `Celular SAMSUNG Galaxy A12 64GB Negro`,
     year: 2021,
     price: 700,
     specs: `Batería inteligente 5000 mAh, que te dura todo el día, Pantalla HD+ que permite ver tus videos con gran nitidez, Almacenamiento de 128GB para que guardes tus archivos.`,
     img: "./img/imagesSmartphones/3/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/3/img_1.jpg", img2: "./img/imagesSmartphones/3/img_2.jpg", img3: "./img/imagesSmartphones/3/img_3.jpg", img4: "./img/imagesSmartphones/3/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/3/img_1.jpg", img2: "./img/imagesSmartphones/3/img_2.jpg", img3: "./img/imagesSmartphones/3/img_3.jpg", img4: "./img/imagesSmartphones/3/img_4.jpg" },
     information: `El elegante Galaxy A12 presenta una hermosa pantalla HD + de 6.5 pulgadas que crea una 
     experiencia visual sin interrupciones, gracias a su gama de colores vibrantes que cuentan con un exclusivo 
     efecto 3D de brillo. Además, viene con una potente cámara cuádruple que facilita la captura de imágenes y 
     videos de aspecto profesional.`,
-},{
+}, {
     id: 12,
     name: `Celular OPPO A54 128GB Azul`,
     year: 2021,
     price: 400,
     specs: `Diseño de cuerpo curvo 3D para un agarre cómodo y seguro, Resistencia a salpicaduras de agua IPX4, 2 años de Garantía`,
     img: "./img/imagesSmartphones/4/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/4/img_1.jpg", img2: "./img/imagesSmartphones/4/img_2.jpg", img3: "./img/imagesSmartphones/4/img_3.jpg", img4: "./img/imagesSmartphones/4/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/4/img_1.jpg", img2: "./img/imagesSmartphones/4/img_2.jpg", img3: "./img/imagesSmartphones/4/img_3.jpg", img4: "./img/imagesSmartphones/4/img_4.jpg" },
     information: `El OPPO A54 viene para ofrecerte una experiencia de nivel superior con una gran batería de 
     5000 mAh que te brindará hasta 2 días de uso y además cuenta con carga rápida. También ofrece una novedosa 
     pantalla punch-hole de alta resolución para juegos, películas y contenido multimedia de alta fluidez.`,
-},{
+}, {
     id: 13,
     name: `iPhone 13 128GB Blanco Estrella`,
     year: 2021,
     price: 2000,
     specs: `A15, Un chip superrápido que deja atrás a la competencia, Un gran salto en duración de batería. Hasta 2,5 horas más, Modo Cine: Te permite editar profundidad luego de la toma.`,
     img: "./img/imagesSmartphones/5/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/5/img_1.jpg", img2: "./img/imagesSmartphones/5/img_2.jpg", img3: "./img/imagesSmartphones/5/img_3.jpg", img4: "./img/imagesSmartphones/5/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/5/img_1.jpg", img2: "./img/imagesSmartphones/5/img_2.jpg", img3: "./img/imagesSmartphones/5/img_3.jpg", img4: "./img/imagesSmartphones/5/img_4.jpg" },
     information: `Diseñamos una arquitectura completamente nueva y giramos los lentes 45 grados. De esta manera, 
     pudimos incluir nuestro sistema de dos cámaras más avanzado y un sensor de cámara gran angular más grande.`,
-},{
+}, {
     id: 14,
     name: `Celular KALLEY Silver Max Lite 32 GB Verde`,
     year: 2021,
     price: 200,
     specs: `6,5" HD+ IPS Gran tamaño de Pantalla y Resolución, Batería de 5.000mAh Eficienciente y de larga duración, CPU de 8 núcleos con GPU GE8322 Gran rendimiento y fluidez.`,
     img: "./img/imagesSmartphones/6/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/6/img_1.jpg", img2: "./img/imagesSmartphones/6/img_2.jpg", img3: "./img/imagesSmartphones/6/img_3.jpg", img4: "./img/imagesSmartphones/6/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/6/img_1.jpg", img2: "./img/imagesSmartphones/6/img_2.jpg", img3: "./img/imagesSmartphones/6/img_3.jpg", img4: "./img/imagesSmartphones/6/img_4.jpg" },
     information: `Fantástica Pantalla waterdrop de 6.5”HD+ Batería de 5.000mAh que dura todo el día, Captura 
     los mejores momentos con tu Cámara principal de 8MP con amplio campo de visión, Con modo Fokus (Retrato) 
     Sistema operativo Android 11 Go Edition, una versión más eficiente y ultraligera.`,
-},{
+}, {
     id: 15,
     name: `Celular ZTE BLADE A5 2020 - 64GB Azul`,
     year: 2021,
     price: 150,
     specs: `Doble cámara, podrás mejorar la calidad en tus fotos, Experiencia inmersa con la pantalla completa de 6.088” HD+, Dual SIM, tu número personal y laboral en el mismo teléfono`,
     img: "./img/imagesSmartphones/7/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/7/img_1.jpg", img2: "./img/imagesSmartphones/7/img_2.jpg", img3: "./img/imagesSmartphones/7/img_3.jpg", img4: "./img/imagesSmartphones/7/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/7/img_1.jpg", img2: "./img/imagesSmartphones/7/img_2.jpg", img3: "./img/imagesSmartphones/7/img_3.jpg", img4: "./img/imagesSmartphones/7/img_4.jpg" },
     information: `Experimenta lo mejor del entretenimiento en un solo equipo, conoce el ZTE BLADE A5 2020.| 
     Celular alimentado por el chipset Spreadtrum SC9863A, 2 GB de RAM y 64 GB de almacenamiento interno y 
     cámara dual posterior para registrar todos tus recuerdos con un gran nivel de detalle.`,
-},{
+}, {
     id: 16,
     name: `Celular NOKIA 5.4 - 128GB Azul`,
     year: 2021,
     price: 400,
     specs: `Android One, siempre seguro y actualizado, Lo que quieras, cuando quieras, con batería hasta 2 días, Pon tu mirada en su gran pantalla 6,39"HD+`,
     img: "./img/imagesSmartphones/8/img_1.jpg",
-    imgC: {img1: "./img/imagesSmartphones/8/img_1.jpg", img2: "./img/imagesSmartphones/8/img_2.jpg", img3: "./img/imagesSmartphones/8/img_3.jpg", img4: "./img/imagesSmartphones/8/img_4.jpg"},
+    imgC: { img1: "./img/imagesSmartphones/8/img_1.jpg", img2: "./img/imagesSmartphones/8/img_2.jpg", img3: "./img/imagesSmartphones/8/img_3.jpg", img4: "./img/imagesSmartphones/8/img_4.jpg" },
     information: `Causa la mejor impresión con tu Nokia 5.4, con una cámara cuádruple de 48MPX, grabación de 
     video avanzado con efectos cinematográficos, podrás capturar tu mundo con un asombroso detalle. Siempre 
     tendrás más de lo que esperas con un rendimiento en el que puedes confiar, gracias a su batería de larga 
@@ -255,8 +255,7 @@ for (const iterador of laptopsList) {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close window</button>
                 </div>
             </div>
         </div>
@@ -318,8 +317,7 @@ for (const iteradorDos of smartphoneList) {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close window</button>
                 </div>
             </div>
         </div>
@@ -344,7 +342,7 @@ class CarritoDeCompras {
         });
         return cuenta_total
     }
-    eliminar_producto(){
+    eliminar_producto() {
         this.productos.pop();
     }
 }
@@ -369,21 +367,21 @@ if (localStorage.getItem("counter") == null) {
     productCounter = localStorage.getItem("counter")
 }
 
-function enlistProduct(currentCounter = 1, listProduct = false){
-        //debugger
-        if (listProduct) {
-            let futureCounter = localStorage.getItem('counter')
-            for (let x = 1; x < futureCounter ; x++) {
-                if(localStorage.getItem('Id_' + x) != null && localStorage.getItem('Name_' + x) != null && 
-                    localStorage.getItem('Price_' + x) != null){
-                    //debugger
-                    table.innerHTML += `
+function enlistProduct(currentCounter = 1, listProduct = false) {
+    //debugger
+    if (listProduct) {
+        let futureCounter = localStorage.getItem('counter')
+        for (let x = 1; x < futureCounter; x++) {
+            if (localStorage.getItem('Id_' + x) != null && localStorage.getItem('Name_' + x) != null &&
+                localStorage.getItem('Price_' + x) != null && localStorage.getItem('totalPriceUni_' + x) != null) {
+                //debugger
+                table.innerHTML += `
                         <tr>
                             <td class='text-center'>${localStorage.getItem('Id_' + x)}</td>
                             <td>${localStorage.getItem('Name_' + x)}</td>
-                            <td id='productCantNumber${x}' class="input"></td>
+                            <td id="productCantNumber${x}" class="input">${localStorage.getItem('Cantproduct_' + x)}</td>
                             <td>$ ${localStorage.getItem('Price_' + x)}</td>
-                            <td>$ ${localStorage.getItem('totalPriceUni_'+x)}</td>
+                            <td>$ ${localStorage.getItem('totalPriceUni_' + x)}</td>
                             <td>
                                 <button class="btn btn-success fw-bold" type="button" onclick="editCantProduct(${x})">
                                     Edit Cant
@@ -394,16 +392,16 @@ function enlistProduct(currentCounter = 1, listProduct = false){
                             </td>
                         </tr>
                     `
-                }
             }
-        } else {
-            table.innerHTML += `
+        }
+    } else {
+        table.innerHTML += `
             <tr>
                 <td class='text-center'>${localStorage.getItem('Id_' + currentCounter)}</td>
                 <td>${localStorage.getItem('Name_' + currentCounter)}</td>
-                <td id='productCantNumber${currentCounter}' class="input"></td>
+                <td id="productCantNumber${currentCounter}" class="input">${localStorage.getItem('Cantproduct_' + currentCounter)}</td>
                 <td>$ ${localStorage.getItem('Price_' + currentCounter)}</td>
-                <td>$ ${localStorage.getItem('totalPriceUni_'+ currentCounter)}</td>
+                <td>$ ${localStorage.getItem('totalPriceUni_' + currentCounter)}</td>
                 <td>
                     <button class="btn btn-success fw-bold" type="button" onclick="editCantProduct(${currentCounter})">
                         Edit Cant.
@@ -414,24 +412,24 @@ function enlistProduct(currentCounter = 1, listProduct = false){
                 </td>
             </tr>
         `
-    }    
+    }
 }
 
 enlistProduct(1, true)
 
-function agregarProductoCarrito(productName, productPrice, productId){
+function agregarProductoCarrito(productName, productPrice, productId) {
     let productInfo = { nombre: productName, precio: productPrice, identificador: productId }
     var contCantidad = 1
     var totalPrice = parseInt(productInfo.precio)
-    localStorage.setItem("Id_"+productCounter, parseInt(productInfo.identificador))
-    localStorage.setItem("Name_"+productCounter, productInfo.nombre)
-    localStorage.setItem("Price_"+productCounter, parseInt(productInfo.precio))
-    localStorage.setItem("Cantproduct_"+productCounter, contCantidad)
-    localStorage.setItem("totalPriceUni_"+productCounter, totalPrice)
-    
+    localStorage.setItem("Id_" + productCounter, parseInt(productInfo.identificador))
+    localStorage.setItem("Name_" + productCounter, productInfo.nombre)
+    localStorage.setItem("Price_" + productCounter, parseInt(productInfo.precio))
+    localStorage.setItem("Cantproduct_" + productCounter, contCantidad)
+    localStorage.setItem("totalPriceUni_" + productCounter, totalPrice)
+
     productCounter = parseInt(productCounter) + 1
     localStorage.setItem("counter", productCounter)
-    
+
     console.log(userBuy.nuevo_producto(productInfo))
     document.getElementById("tableTotal").innerHTML = `
     <tr>
@@ -440,7 +438,7 @@ function agregarProductoCarrito(productName, productPrice, productId){
     `
     //debugger
     contCart = parseInt(contCart) + 1
-    console.log(contCart)
+    // console.log(contCart)
     localStorage.setItem('counterCart', contCart)
     counterCart.innerHTML = `
     <span>${localStorage.getItem('counterCart')}</span>
@@ -449,41 +447,94 @@ function agregarProductoCarrito(productName, productPrice, productId){
     enlistProduct(currentCounter)
 }
 
-function editCantProduct(productUbi){
-    //console.log(productUbi)
-    var productCant = document.getElementById(`productCantNumber${productUbi}`);
-    var priceAfter = localStorage.getItem('Cantproduct_'+productUbi)
-    productCant.innerHTML = `
-        <input type='number' class="inputCant me-3" value="${priceAfter}">
-        <button class="btn btn-warning fw-bold" type="button" onclick="setCantProduct(${productUbi})">
+function editCantProduct(productUbi) {
+    // console.log(productUbi)
+    var inputCantChange = document.getElementById(`productCantNumber${productUbi}`);
+    // console.log(inputCantChange)
+    var productCantAfter = localStorage.getItem('Cantproduct_' + productUbi)
+    // console.log(productCantAfter)
+    var productPriceAfter = localStorage.getItem('totalPriceUni_'+productUbi)
+    // console.log(productPriceAfter)
+    inputCantChange.innerHTML = `
+        <input type='number' class="inputCant me-3" id=inputCantProduct${productUbi} value="${productCantAfter}">
+        <button class="btn btn-warning fw-bold" type="button" onclick="setCantProduct(${productUbi},${productCantAfter})">
             Ok.
         </button>
     `
 }
 
-function setCantProduct(cantUbi){
-    var value = document.querySelector(".inputCant").value;
-    var priceProduct = localStorage.getItem('totalPriceUni_'+cantUbi)
-    var prueba = parseInt(value) * parseInt(priceProduct)
-    console.log(prueba)
-    localStorage.setItem('totalPriceUni_' + cantUbi, prueba)
-    let table = document.querySelector("#tableProducts")
-    table.innerHTML = ''
-    enlistProduct(1, true)
+function setCantProduct(ubicacionProduct, productCantLocal) {
+    // console.log(ubicacionProduct)
+    // console.log(productCantLocal)
+    var value = document.querySelector(`#inputCantProduct${ubicacionProduct}`).value;
+    if(value == productCantLocal){
+        table.innerHTML = ''
+        enlistProduct(1, true)
+    }else{
+        // console.log('la cantidad es diferente')
+        var priceUnitProduct = localStorage.getItem('Price_' + ubicacionProduct)
+        var priceProductTotal = parseInt(value) * parseInt(priceUnitProduct)
+        // console.log(priceProductTotal)
+        localStorage.setItem('totalPriceUni_' + ubicacionProduct, priceProductTotal)
+        localStorage.setItem('Cantproduct_' + ubicacionProduct, value)
+        let table = document.querySelector("#tableProducts")
+        table.innerHTML = ''
+        enlistProduct(1, true)
+    }
+
 }
 
-function deleteProduct(productUbi){
-    let table = document.querySelector("#tableProducts")
-    table.innerHTML = ''
+function deleteProduct(productUbi) {
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+    })
 
-    localStorage.removeItem("Id_" + productUbi)
-    localStorage.removeItem("Name_" + productUbi)
-    localStorage.removeItem("Price_" + productUbi)
-    enlistProduct(1, true)
-    
-    contCart = parseInt(contCart) - parseInt(1)
-    localStorage.setItem('counterCart', contCart)
-    counterCart.innerHTML = `
-    <span>${localStorage.getItem('counterCart')}</span>
-    `
+    swalWithBootstrapButtons.fire({
+        title: 'Are you sure to delete this product?',
+        text: "You will not be able to reverse this action!",
+        imageUrl: './img/imagesLogosPage/ico.png',
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+        showCancelButton: true,
+        cancelButtonText: 'No, dont delete!',
+        confirmButtonText: 'Yes, delete the product!',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            
+            let table = document.querySelector("#tableProducts")
+            table.innerHTML = ''
+        
+            localStorage.removeItem("Id_" + productUbi)
+            localStorage.removeItem("Name_" + productUbi)
+            localStorage.removeItem("Price_" + productUbi)
+            localStorage.removeItem("totalPriceUni_" + productUbi)
+            localStorage.removeItem("Cantproduct_" + productUbi)
+            enlistProduct(1, true)
+        
+            contCart = parseInt(contCart) - parseInt(1)
+            localStorage.setItem('counterCart', contCart)
+            counterCart.innerHTML = `
+            <span>${localStorage.getItem('counterCart')}</span>
+            `
+
+            swalWithBootstrapButtons.fire(
+                'Deleted!',
+                'Your product has been removed from the shopping cart',
+                'success'
+            )
+        } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+        ) {
+            swalWithBootstrapButtons.fire(
+                'Cancelled',
+                'Your product is safe :)',
+            )
+        }
+    })
 }
