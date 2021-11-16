@@ -439,10 +439,10 @@ enlistProduct(1, true)
 
 function agregarProductoCarrito(productName, productPrice, productId) {
     let productInfo = { nombre: productName, precio: productPrice, identificador: productId }
-    
+
     var contCantidad = 1
     var totalPrice = parseInt(productInfo.precio)
-    
+
     localStorage.setItem("Id_" + productCounter, parseInt(productInfo.identificador))
     localStorage.setItem("Name_" + productCounter, productInfo.nombre)
     localStorage.setItem("Price_" + productCounter, parseInt(productInfo.precio))
@@ -451,7 +451,7 @@ function agregarProductoCarrito(productName, productPrice, productId) {
 
     productCounter = parseInt(productCounter) + 1
     localStorage.setItem("counter", productCounter)
-    
+
     userBuy.nuevo_producto(productInfo)
     // console.log(userBuy.nuevo_producto(productInfo))
 
@@ -473,7 +473,7 @@ function editCantProduct(productUbi) {
     // console.log(inputCantChange)
     var productCantAfter = localStorage.getItem('Cantproduct_' + productUbi)
     // console.log(productCantAfter)
-    var productPriceAfter = localStorage.getItem('totalPriceUni_'+productUbi)
+    var productPriceAfter = localStorage.getItem('totalPriceUni_' + productUbi)
     // console.log(productPriceAfter)
     inputCantChange.innerHTML = `
         <input type='number' class="inputCant me-3" id=inputCantProduct${productUbi} value="${productCantAfter}">
@@ -487,11 +487,11 @@ function setCantProduct(ubicacionProduct, productCantLocal) {
     // console.log(ubicacionProduct)
     // console.log(productCantLocal)
     var value = document.querySelector(`#inputCantProduct${ubicacionProduct}`).value;
-    if(value == productCantLocal){
+    if (value == productCantLocal) {
         table.innerHTML = ''
         valorTotalCartShop()
         enlistProduct(1, true)
-    }else{
+    } else {
         // console.log('la cantidad es diferente')
         var priceUnitProduct = localStorage.getItem('Price_' + ubicacionProduct)
         var priceProductTotal = parseInt(value) * parseInt(priceUnitProduct)
@@ -529,15 +529,15 @@ function deleteProduct(productUbi) {
             valorTotalCartShop()
             let table = document.querySelector("#tableProducts")
             table.innerHTML = ''
-        
+
             localStorage.removeItem("Id_" + productUbi)
             localStorage.removeItem("Name_" + productUbi)
             localStorage.removeItem("Price_" + productUbi)
             localStorage.removeItem("totalPriceUni_" + productUbi)
             localStorage.removeItem("Cantproduct_" + productUbi)
-            
+
             enlistProduct(1, true)
-        
+
             contCart = parseInt(contCart) - parseInt(1)
             localStorage.setItem('counterCart', contCart)
             counterCart.innerHTML = `
@@ -560,14 +560,14 @@ function deleteProduct(productUbi) {
     })
 }
 
-function valorTotalCartShop(){
+function valorTotalCartShop() {
     // debugger
     let numberOfProduct = parseInt(localStorage.getItem('counter'))
     var valorTotal = parseInt(0);
     console.log(numberOfProduct)
     for (let it = 1; it < numberOfProduct; it++) {
         var valor = localStorage.getItem("totalPriceUni_" + it)
-        if(valor == null){
+        if (valor == null) {
             valor = parseInt(0);
         }
         console.log(valor)
@@ -576,4 +576,35 @@ function valorTotalCartShop(){
     }
     console.log(valorTotal)
     localStorage.setItem('sumaTotalPreciosCart', valorTotal)
+}
+
+function endShop() {
+    var totalProducts = localStorage.getItem('counterCart')
+    var priceTotal = localStorage.getItem('sumaTotalPreciosCart')
+    
+    Swal.fire({
+        title: 'Your shopping list is complete, Great!!',
+        text: `You have #${totalProducts} selected products.`,
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, i take everything!',
+        cancelButtonText: 'No, cancel!',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                icon: 'success',
+                title: `The total to pay are $${priceTotal}`,
+                text: 'Fantastic, your products are on the way',
+                text: 'Thanks for yout visit!!'
+            })
+            localStorage.clear();
+            setTimeout(recargarPag, 3000);
+        }
+    })
+}
+
+function recargarPag(){
+    location.reload();
 }

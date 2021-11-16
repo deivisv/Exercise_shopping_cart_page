@@ -27,3 +27,8 @@ body{
 .inputCant{
     width: 40% !important;
 }
+
+.textShadow{
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1) !important;
+    color: #132456 !important;
+}
