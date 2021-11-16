@@ -11,3 +11,8 @@ Proyecto de práctica, aplicando los conocimientos adquiridos en temas como: fun
 ***
 ### Screenshot
 ![](/preview.jpg)
+***
+![](/preview2.jpg)
+***
+![](/preview3.jpg)
+
