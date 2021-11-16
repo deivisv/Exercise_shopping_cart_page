@@ -3,7 +3,7 @@ let laptopsList = [{
     name: `Laptop HP 15,6 Pulgadas 15 dw1066la - Plata Natural`,
     year: 2021,
     price: 1500,
-    specs: "Intel Core i5, Ram 8GB, SSD 500GB, Intel HD grapichs",
+    specs: "<br> - Intel Core i5. <br> - Ram 8GB. <br> - SSD 500GB. <br> - Intel HD grapichs.",
     img: "./img/imagesLaptops/1/img_one.jpg",
     imgC: { img1: "./img/imagesLaptops/1/img_one.jpg", img2: "./img/imagesLaptops/1/img_two.jpg", img3: "./img/imagesLaptops/1/img_three.jpg", img4: "./img/imagesLaptops/1/img_one.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -14,7 +14,7 @@ let laptopsList = [{
     name: `Laptop ASUS 14 Pulgadas X415JA-BV1097TS - Azul`,
     year: 2021,
     price: 2500,
-    specs: "Procesador Intel Pentium Gold, Ram 4GB, SSD 125GB, Intel HD grapichs",
+    specs: "<br> - Procesador Intel Pentium Gold. <br> - Ram 4GB. <br> - SSD 125GB. <br> - Intel HD grapichs.",
     img: "./img/imagesLaptops/2/img_1.jpg",
     imgC: { img1: "./img/imagesLaptops/2/img_1.jpg", img2: "./img/imagesLaptops/2/img_2.jpg", img3: "./img/imagesLaptops/2/img_3.jpg", img4: "./img/imagesLaptops/2/img_1.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -25,7 +25,7 @@ let laptopsList = [{
     name: `Laptop LENOVO 14 Pulgadas S145 - Negro`,
     year: 2021,
     price: 3000,
-    specs: `Intel Core i3, Ram 4GB, Disco Solido 128GB`,
+    specs: `<br> - Intel Core i3. <br> - Ram 4GB. <br> - Disco Solido 128GB.`,
     img: "./img/imagesLaptops/3/img_1.jpg",
     imgC: { img1: "./img/imagesLaptops/3/img_1.jpg", img2: "./img/imagesLaptops/3/img_2.png", img3: "./img/imagesLaptops/3/img_3.png", img4: "./img/imagesLaptops/3/img_4.png" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -36,7 +36,7 @@ let laptopsList = [{
     name: `Laptop ACER 15.6 Pulgadas 31VS - Plateado`,
     year: 2020,
     price: 1600,
-    specs: `Intel Core i3, 4GB RAM, Disco Solido 256GB`,
+    specs: `<br> - Intel Core i3. <br> - 4GB RAM. <br> - Disco Solido 256GB.`,
     img: "./img/imagesLaptops/4/img_1.jpg",
     imgC: { img1: "./img/imagesLaptops/4/img_1.jpg", img2: "./img/imagesLaptops/4/img_2.jpg", img3: "./img/imagesLaptops/4/img_3.jpg", img4: "./img/imagesLaptops/4/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -47,7 +47,7 @@ let laptopsList = [{
     name: `MacBook Air de 13 Pulgadas MGN63LA/A - Gris espacial`,
     year: 2021,
     price: 4000,
-    specs: `Chip M1 RAM 8GB Disco Estado Solido 256 GB `,
+    specs: `<br> - Chip M1. <br> - RAM 8GB. <br> - Disco Estado Solido 256 GB.`,
     img: "./img/imagesLaptops/5/img_1.jpg",
     imgC: { img1: "./img/imagesLaptops/5/img_1.jpg", img2: "./img/imagesLaptops/5/img_2.jpg", img3: "./img/imagesLaptops/5/img_3.jpg", img4: "./img/imagesLaptops/5/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -58,7 +58,7 @@ let laptopsList = [{
     name: `laptop Huawei 15.6 pulgadas Matebook D15`,
     year: 2021,
     price: 1800,
-    specs: `Intel Core i5, SSD 512GB, 16GB RAM`,
+    specs: `<br> - Intel Core i5. <br> - SSD 512GB. <br> - 16GB RAM.`,
     img: "./img/imagesLaptops/6/img_1.jpg",
     imgC: { img1: "./img/imagesLaptops/6/img_1.jpg", img2: "./img/imagesLaptops/6/img_2.jpg", img3: "./img/imagesLaptops/6/img_3.jpg", img4: "./img/imagesLaptops/6/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -69,7 +69,7 @@ let laptopsList = [{
     name: `Laptop MSI 15.6 Pulgadas Modern 15A5M - Gris`,
     year: 2021,
     price: 3000,
-    specs: ` Ryzen 5, 8GB RAM, Disco Estado Sólido 256GB`,
+    specs: `<br> - Ryzen 5. <br> - 8GB RAM. <br> - Disco Estado Sólido 256GB.`,
     img: "./img/imagesLaptops/7/img_1.jpg",
     imgC: { img1: "./img/imagesLaptops/7/img_1.jpg", img2: "./img/imagesLaptops/7/img_2.jpg", img3: "./img/imagesLaptops/7/img_3.jpg", img4: "./img/imagesLaptops/7/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -80,7 +80,7 @@ let laptopsList = [{
     name: `Laptop LENOVO 10,1 Pulgadas D330 - Gris`,
     year: 2019,
     price: 1500,
-    specs: `Intel Celeron, 4GB Ram, Disco Solido 64GB, Computador Convertible 2en1`,
+    specs: `<br> - Intel Celeron. <br> - 4GB Ram. <br> - Disco Solido 64GB. <br> - Computador Convertible 2en1.`,
     img: "./img/imagesLaptops/8/img_1.jpg",
     imgC: { img1: "./img/imagesLaptops/8/img_1.jpg", img2: "./img/imagesLaptops/8/img_2.jpg", img3: "./img/imagesLaptops/8/img_3.jpg", img4: "./img/imagesLaptops/8/img_4.jpg" },
     information: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam aut fuga 
@@ -93,7 +93,7 @@ let smartphoneList = [{
     name: `Celular MOTOROLA G20 64GB Rosado`,
     year: 2021,
     price: 600,
-    specs: `Sistema de 4 cámaras con 48 MP1, Pantalla fluida de 90 Hz con 6.5, Hasta 2 días de batería2.`,
+    specs: `<br> - Sistema de 4 cámaras con 48 MP1. <br> - Pantalla fluida de 90 Hz con 6.5. <br> - Hasta 2 días de batería.`,
     img: "./img/imagesSmartphones/1/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/1/img_1.jpg", img2: "./img/imagesSmartphones/1/img_2.jpg", img3: "./img/imagesSmartphones/1/img_3.jpg", img4: "./img/imagesSmartphones/1/img_4.jpg" },
     information: `El nuevo moto g20 cuenta con un avanzado sistema de 4 cámaras. Anhelas un sensor de 48 MP1 y 
@@ -104,7 +104,7 @@ let smartphoneList = [{
     name: `Celular XIAOMI REDMI 10 128GB Gris`,
     year: 2021,
     price: 500,
-    specs: `Cámara cuádruple de 50Mp, alta calidad al mejor precio, Pantalla de 90Hz, disfruta mejores experiencias en juegos, Procesador MediaTek G88, poderoso en todo momento`,
+    specs: `<br> - Cámara cuádruple de 50Mp. <br> - Alta calidad al mejor precio. <br> - Pantalla de 90Hz. <br> - Disfruta mejores experiencias en juegos. <br> - Procesador MediaTek G88, poderoso en todo momento.`,
     img: "./img/imagesSmartphones/2/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/2/img_1.jpg", img2: "./img/imagesSmartphones/2/img_2.jpg", img3: "./img/imagesSmartphones/2/img_3.jpg", img4: "./img/imagesSmartphones/2/img_4.jpg" },
     information: `Con el nuevo Redmi 10 tendrás la total seguridad que todos tus momentos serán especiales 
@@ -118,7 +118,7 @@ let smartphoneList = [{
     name: `Celular SAMSUNG Galaxy A12 64GB Negro`,
     year: 2021,
     price: 700,
-    specs: `Batería inteligente 5000 mAh, que te dura todo el día, Pantalla HD+ que permite ver tus videos con gran nitidez, Almacenamiento de 128GB para que guardes tus archivos.`,
+    specs: `<br> - Batería inteligente 5000 mAh que te dura todo el día. <br> - Pantalla HD+ que permite ver tus videos con gran nitidez. <br> - Almacenamiento de 128GB para que guardes tus archivos.`,
     img: "./img/imagesSmartphones/3/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/3/img_1.jpg", img2: "./img/imagesSmartphones/3/img_2.jpg", img3: "./img/imagesSmartphones/3/img_3.jpg", img4: "./img/imagesSmartphones/3/img_4.jpg" },
     information: `El elegante Galaxy A12 presenta una hermosa pantalla HD + de 6.5 pulgadas que crea una 
@@ -130,7 +130,7 @@ let smartphoneList = [{
     name: `Celular OPPO A54 128GB Azul`,
     year: 2021,
     price: 400,
-    specs: `Diseño de cuerpo curvo 3D para un agarre cómodo y seguro, Resistencia a salpicaduras de agua IPX4, 2 años de Garantía`,
+    specs: `<br> - Diseño de cuerpo curvo 3D para un agarre cómodo y seguro. <br> -  Resistencia a salpicaduras de agua IPX4. <br> - 2 años de Garantía.`,
     img: "./img/imagesSmartphones/4/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/4/img_1.jpg", img2: "./img/imagesSmartphones/4/img_2.jpg", img3: "./img/imagesSmartphones/4/img_3.jpg", img4: "./img/imagesSmartphones/4/img_4.jpg" },
     information: `El OPPO A54 viene para ofrecerte una experiencia de nivel superior con una gran batería de 
@@ -141,7 +141,7 @@ let smartphoneList = [{
     name: `iPhone 13 128GB Blanco Estrella`,
     year: 2021,
     price: 2000,
-    specs: `A15, Un chip superrápido que deja atrás a la competencia, Un gran salto en duración de batería. Hasta 2,5 horas más, Modo Cine: Te permite editar profundidad luego de la toma.`,
+    specs: `<br> - A15, Un chip superrápido que deja atrás a la competencia. <br> -  Un gran salto en duración de batería. Hasta 2,5 horas más. <br> - Modo Cine: Te permite editar profundidad luego de la toma.`,
     img: "./img/imagesSmartphones/5/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/5/img_1.jpg", img2: "./img/imagesSmartphones/5/img_2.jpg", img3: "./img/imagesSmartphones/5/img_3.jpg", img4: "./img/imagesSmartphones/5/img_4.jpg" },
     information: `Diseñamos una arquitectura completamente nueva y giramos los lentes 45 grados. De esta manera, 
@@ -151,7 +151,7 @@ let smartphoneList = [{
     name: `Celular KALLEY Silver Max Lite 32 GB Verde`,
     year: 2021,
     price: 200,
-    specs: `6,5" HD+ IPS Gran tamaño de Pantalla y Resolución, Batería de 5.000mAh Eficienciente y de larga duración, CPU de 8 núcleos con GPU GE8322 Gran rendimiento y fluidez.`,
+    specs: `<br> - 6,5" HD+ IPS Gran tamaño de Pantalla y Resolución. <br> - Batería de 5.000mAh Eficienciente y de larga duración. <br> - CPU de 8 núcleos con GPU GE8322 Gran rendimiento y fluidez.`,
     img: "./img/imagesSmartphones/6/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/6/img_1.jpg", img2: "./img/imagesSmartphones/6/img_2.jpg", img3: "./img/imagesSmartphones/6/img_3.jpg", img4: "./img/imagesSmartphones/6/img_4.jpg" },
     information: `Fantástica Pantalla waterdrop de 6.5”HD+ Batería de 5.000mAh que dura todo el día, Captura 
@@ -162,7 +162,7 @@ let smartphoneList = [{
     name: `Celular ZTE BLADE A5 2020 - 64GB Azul`,
     year: 2021,
     price: 150,
-    specs: `Doble cámara, podrás mejorar la calidad en tus fotos, Experiencia inmersa con la pantalla completa de 6.088” HD+, Dual SIM, tu número personal y laboral en el mismo teléfono`,
+    specs: `<br> - Doble cámara, podrás mejorar la calidad en tus fotos. <br> - Experiencia inmersa con la pantalla completa de 6.088” HD+. <br> - Dual SIM, tu número personal y laboral en el mismo teléfono`,
     img: "./img/imagesSmartphones/7/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/7/img_1.jpg", img2: "./img/imagesSmartphones/7/img_2.jpg", img3: "./img/imagesSmartphones/7/img_3.jpg", img4: "./img/imagesSmartphones/7/img_4.jpg" },
     information: `Experimenta lo mejor del entretenimiento en un solo equipo, conoce el ZTE BLADE A5 2020.| 
@@ -173,7 +173,7 @@ let smartphoneList = [{
     name: `Celular NOKIA 5.4 - 128GB Azul`,
     year: 2021,
     price: 400,
-    specs: `Android One, siempre seguro y actualizado, Lo que quieras, cuando quieras, con batería hasta 2 días, Pon tu mirada en su gran pantalla 6,39"HD+`,
+    specs: `<br> - Android One, siempre seguro y actualizado, Lo que quieras, cuando quieras. <br> - Batería de hasta 2 días de duracion. <br> - Pon tu mirada en su gran pantalla 6,39"HD+`,
     img: "./img/imagesSmartphones/8/img_1.jpg",
     imgC: { img1: "./img/imagesSmartphones/8/img_1.jpg", img2: "./img/imagesSmartphones/8/img_2.jpg", img3: "./img/imagesSmartphones/8/img_3.jpg", img4: "./img/imagesSmartphones/8/img_4.jpg" },
     information: `Causa la mejor impresión con tu Nokia 5.4, con una cámara cuádruple de 48MPX, grabación de 
@@ -351,8 +351,13 @@ let userBuy = new CarritoDeCompras();
 let table = document.querySelector("#tableProducts")
 let counterCart = document.querySelector("#cartNumber")
 let contCart = 0;
+let tableSectionTotal = document.getElementById("footerTotal")
+
 if (localStorage.getItem('counterCart') == null) {
     localStorage.setItem('counterCart', contCart)
+    counterCart.innerHTML = `
+        <span>${contCart}</span>
+    `
 } else {
     contCart = localStorage.getItem('counterCart')
     counterCart.innerHTML = `
@@ -360,7 +365,8 @@ if (localStorage.getItem('counterCart') == null) {
     `
 }
 
-var productCounter = 1
+var productCounter = 1;
+
 if (localStorage.getItem("counter") == null) {
     localStorage.setItem('counter', productCounter)
 } else {
@@ -394,6 +400,13 @@ function enlistProduct(currentCounter = 1, listProduct = false) {
                     `
             }
         }
+        valorTotalCartShop()
+        tableSectionTotal.innerHTML = `
+        <tr>
+            <td colspan="5" class="text-center fw-bold">Total price of product</td>
+            <td colspan="6">$ ${localStorage.getItem('sumaTotalPreciosCart')}</td>
+        </tr>
+        `
     } else {
         table.innerHTML += `
             <tr>
@@ -412,15 +425,24 @@ function enlistProduct(currentCounter = 1, listProduct = false) {
                 </td>
             </tr>
         `
+        tableSectionTotal.innerHTML = `
+        <tr>
+            <td colspan="5" class="text-center fw-bold">Total price of product</td>
+            <td colspan="6">$ ${localStorage.getItem('sumaTotalPreciosCart')}</td>
+        </tr>
+        `
     }
 }
 
+valorTotalCartShop()
 enlistProduct(1, true)
 
 function agregarProductoCarrito(productName, productPrice, productId) {
     let productInfo = { nombre: productName, precio: productPrice, identificador: productId }
+    
     var contCantidad = 1
     var totalPrice = parseInt(productInfo.precio)
+    
     localStorage.setItem("Id_" + productCounter, parseInt(productInfo.identificador))
     localStorage.setItem("Name_" + productCounter, productInfo.nombre)
     localStorage.setItem("Price_" + productCounter, parseInt(productInfo.precio))
@@ -429,13 +451,10 @@ function agregarProductoCarrito(productName, productPrice, productId) {
 
     productCounter = parseInt(productCounter) + 1
     localStorage.setItem("counter", productCounter)
+    
+    userBuy.nuevo_producto(productInfo)
+    // console.log(userBuy.nuevo_producto(productInfo))
 
-    console.log(userBuy.nuevo_producto(productInfo))
-    document.getElementById("tableTotal").innerHTML = `
-    <tr>
-        <td colspan="4">$ ${userBuy.precio_total(productInfo.precio)}</td>
-    </tr>
-    `
     //debugger
     contCart = parseInt(contCart) + 1
     // console.log(contCart)
@@ -443,6 +462,7 @@ function agregarProductoCarrito(productName, productPrice, productId) {
     counterCart.innerHTML = `
     <span>${localStorage.getItem('counterCart')}</span>
     `
+    valorTotalCartShop()
     let currentCounter = parseInt(productCounter) - 1
     enlistProduct(currentCounter)
 }
@@ -469,6 +489,7 @@ function setCantProduct(ubicacionProduct, productCantLocal) {
     var value = document.querySelector(`#inputCantProduct${ubicacionProduct}`).value;
     if(value == productCantLocal){
         table.innerHTML = ''
+        valorTotalCartShop()
         enlistProduct(1, true)
     }else{
         // console.log('la cantidad es diferente')
@@ -479,9 +500,9 @@ function setCantProduct(ubicacionProduct, productCantLocal) {
         localStorage.setItem('Cantproduct_' + ubicacionProduct, value)
         let table = document.querySelector("#tableProducts")
         table.innerHTML = ''
+        valorTotalCartShop()
         enlistProduct(1, true)
     }
-
 }
 
 function deleteProduct(productUbi) {
@@ -505,7 +526,7 @@ function deleteProduct(productUbi) {
         confirmButtonText: 'Yes, delete the product!',
     }).then((result) => {
         if (result.isConfirmed) {
-            
+            valorTotalCartShop()
             let table = document.querySelector("#tableProducts")
             table.innerHTML = ''
         
@@ -514,6 +535,7 @@ function deleteProduct(productUbi) {
             localStorage.removeItem("Price_" + productUbi)
             localStorage.removeItem("totalPriceUni_" + productUbi)
             localStorage.removeItem("Cantproduct_" + productUbi)
+            
             enlistProduct(1, true)
         
             contCart = parseInt(contCart) - parseInt(1)
@@ -521,7 +543,6 @@ function deleteProduct(productUbi) {
             counterCart.innerHTML = `
             <span>${localStorage.getItem('counterCart')}</span>
             `
-
             swalWithBootstrapButtons.fire(
                 'Deleted!',
                 'Your product has been removed from the shopping cart',
@@ -537,4 +558,22 @@ function deleteProduct(productUbi) {
             )
         }
     })
+}
+
+function valorTotalCartShop(){
+    // debugger
+    let numberOfProduct = parseInt(localStorage.getItem('counter'))
+    var valorTotal = parseInt(0);
+    console.log(numberOfProduct)
+    for (let it = 1; it < numberOfProduct; it++) {
+        var valor = localStorage.getItem("totalPriceUni_" + it)
+        if(valor == null){
+            valor = parseInt(0);
+        }
+        console.log(valor)
+        valorTotal = parseInt(valorTotal) + parseInt(valor)
+        console.log(valorTotal)
+    }
+    console.log(valorTotal)
+    localStorage.setItem('sumaTotalPreciosCart', valorTotal)
 }

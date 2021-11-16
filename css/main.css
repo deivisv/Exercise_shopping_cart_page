@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap');
+
+body{
+    font-family: 'Montagu Slab', serif !important;
+    background-color: rgba(135, 206, 250, 0.568) !important;
+}
+
 .navbarr{
     background-color: #132456 !important;
 }
